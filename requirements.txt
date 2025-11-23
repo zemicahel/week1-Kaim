@@ -1,0 +1,11 @@
+pandas
+TA-Lib
+nltk
+textblob
+yfinance
+numpy
+matplotlib
+seaborn
+scipy
+streamlit
+mplfinance
