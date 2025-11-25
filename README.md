@@ -1,78 +1,49 @@
+# 📈 Financial News Sentiment & Stock Prediction
 
-📈 Financial News Sentiment & Stock Prediction
+<p align="center">
+  <img src="https://img.shields.io/badge/python-3.9+-blue.svg" alt="Python 3.9+">
+  <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT">
+  <img src="https://img.shields.io/badge/Status-Active%20Development-green" alt="Status: Active">
+  <img src="https://img.shields.io/badge/code%20style-black-000000.svg" alt="Code Style: Black">
+</p>
 
-![alt text](https://img.shields.io/badge/python-3.9+-blue.svg)
+> **10 Academy: Artificial Intelligence Mastery - Week 1 Challenge**  
+> *Unlocking market alpha through Natural Language Processing and Technical Analysis.*
 
+---
 
-![alt text](https://img.shields.io/badge/License-MIT-yellow.svg)
+## 📖 Project Overview
 
+This project bridges the gap between **Financial Analytics (FA)** and **Machine Learning Engineering (MLE)**. It analyzes a massive corpus of financial news headlines to quantify sentiment and explores statistical correlations with stock market movements for major tech giants (AAPL, AMZN, GOOG, META, MSFT, NVDA).
 
-![alt text](https://img.shields.io/badge/Status-Active%20Development-green)
+**The Core Hypothesis:**  
+*Does positive news sentiment reliably predict an uptick in stock prices, and can we identify specific keywords or topics that drive market volatility?*
 
+### 🚀 Key Features
+*   **Sentiment Analysis:** NLP pipelines using `TextBlob` and `NLTK` to score headline polarity.
+*   **Topic Modeling:** Latent Dirichlet Allocation (LDA) to discover hidden themes in financial news.
+*   **Technical Analysis:** Calculation of RSI, MACD, and SMA using `TA-Lib` and `PyNance`.
+*   **Correlation Engine:** Statistical mapping of sentiment scores against daily stock returns.
+*   **Modular Architecture:** Clean, reusable Python scripts located in `src/`.
 
-![alt text](https://img.shields.io/badge/code%20style-black-000000.svg)
+---
 
-10 Academy: Artificial Intelligence Mastery - Week 1 Challenge
-Unlocking market alpha through Natural Language Processing and Technical Analysis.
+## 📂 Repository Structure
 
-📖 Project Overview
+<p align="center">
+  <img src="Images/filestructure.png" alt="File Structure" width="80%">
+  <br>
+  <em>Fig 1: Project Directory Structure</em>
+</p>
 
-This project bridges the gap between Financial Analytics (FA) and Machine Learning Engineering (MLE). It analyzes a massive corpus of financial news headlines to quantify sentiment and explores statistical correlations with stock market movements for major tech giants (AAPL, AMZN, GOOG, META, MSFT, NVDA).
+---
 
-The Core Hypothesis:
-Does positive news sentiment reliably predict an uptick in stock prices, and can we identify specific keywords or topics that drive market volatility?
-
-🚀 Key Features
-
-Sentiment Analysis: NLP pipelines using TextBlob and NLTK to score headline polarity.
-
-Topic Modeling: Latent Dirichlet Allocation (LDA) to discover hidden themes in financial news.
-
-Technical Analysis: Calculation of RSI, MACD, and SMA using TA-Lib and PyNance.
-
-Correlation Engine: Statistical mapping of sentiment scores against daily stock returns.
-
-Modular Architecture: Clean, reusable Python scripts located in src/.
-
-📂 Repository Structure
-code
-Code
-download
-content_copy
-expand_less
-├── .github/workflows/   # CI/CD pipelines (GitHub Actions)
-├── data/                # Raw and processed datasets
-│   ├── raw_analyst_ratings.csv
-│   └── AAPL.csv
-│   └── AMZN.csv
-│   └── GOOG.csv
-│   └── META.csv
-│   └── MSFT.csv
-│   └── NVDA.csv
-├── notebooks/           # Interactive analysis (Jupyter)
-│   ├── 01_data_preparation.ipynb
-│   ├── 02_sentiment_analysis.ipynb
-│   └── 03_correlation_analysis.ipynb
-├── src/                 # Source code modules
-│   ├── article_analysis.py    # NLP, keyword extraction, LDA
-│   ├── data_processing.py     # Data cleaning & loading
-│   ├── sentiment_analysis.py  # Polarity computation
-│   ├── stock_analysis.py      # Technical indicators (RSI, MACD)
-│   └── visualization.py       # Plotting utilities
-├── tests/               # Unit tests
-├── .gitignore
-├── README.md
-└── requirements.txt
-🛠 Installation & Setup
+## 🛠 Installation & Setup
 
 Follow these steps to set up a reproducible environment.
 
-1. Clone the Repository
-code
-Bash
-download
-content_copy
-expand_less
+### 1. Clone the Repository
+```bash
 git clone https://github.com/zemicahel/week1-Kaim.git
 cd week1-Kaim
 2. Virtual Environment
@@ -108,8 +79,14 @@ make
 sudo make install
 
 Windows:
-Please download the appropriate .whl file for your Python version from this unofficial repository and install via pip (e.g., pip install TA_Lib‑0.4.24‑cp39‑cp39‑win_amd64.whl).
+Please download the appropriate .whl file for your Python version from this unofficial repository and install via pip:
 
+code
+Bash
+download
+content_copy
+expand_less
+pip install TA_Lib‑0.4.24‑cp39‑cp39‑win_amd64.whl
 4. Install Python Dependencies
 code
 Bash
@@ -200,3 +177,9 @@ Zemicahel
 
 
 ![alt text](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)
+
+code
+Code
+download
+content_copy
+expand_less
